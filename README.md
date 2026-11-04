@@ -3,13 +3,16 @@
 Responsive React + TypeScript + Vite app with muted-purple UI, Three.js 3D surface preview, dashboard, ECU discovery UI, DTC UI, live-data UI and USB serial connection scaffold.
 
 ## Run locally
+
 ```bash
 npm install
 npm run dev
 ```
+
 For deployment, use HTTPS. Desktop Chrome/Edge is the initial reference environment.
 
 ## Implemented
+
 - Responsive desktop/mobile layout and muted-purple theme.
 - Three.js demo surface (not an ECU fuel/ignition map).
 - USB Web Serial port picker and serial open scaffold.
@@ -17,6 +20,7 @@ For deployment, use HTTPS. Desktop Chrome/Edge is the initial reference environm
 - Demo telemetry clearly marked as simulated.
 
 ## Not yet implemented
+
 - Honda-specific K-Line wake-up/initialization and ECU identification.
 - Real DTC read/clear commands and Live Data decoding.
 - Firmware reading/writing, map definitions, checksum, security access or flashing.

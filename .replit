@@ -16,6 +16,10 @@ author = 34106712
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
+args = "npm install"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
 args = "npm run dev"
 
 [[workflows.workflow]]
@@ -26,15 +30,6 @@ author = 34106712
 [[workflows.workflow.tasks]]
 task = "workflow.run"
 args = "run dev"
-
-[[workflows.workflow]]
-name = "Hi"
-mode = "sequential"
-author = 34106712
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = '''npm install --save-dev husky lint-staged npx husky init node --eval "fs.writeFileSync('.husky/pre-commit','npx lint-staged\n')"'''
 
 [[ports]]
 localPort = 5000
